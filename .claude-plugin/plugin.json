@@ -10,5 +10,9 @@
   "homepage": "https://github.com/aidoggo/boardroom",
   "repository": "https://github.com/aidoggo/boardroom",
   "license": "MIT",
-  "keywords": ["agents", "meeting", "multi-agent", "decisions", "subagents"]
+  "keywords": ["agents", "meeting", "multi-agent", "decisions", "subagents"],
+  "documentationUrl": "https://github.com/aidoggo/boardroom#readme",
+  "supportUrl": "https://github.com/aidoggo/boardroom/issues",
+  "privacyPolicyUrl": "https://github.com/aidoggo/boardroom/blob/main/PRIVACY.md",
+  "termsOfServiceUrl": "https://github.com/aidoggo/boardroom/blob/main/LICENSE"
 }
