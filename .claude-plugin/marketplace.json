@@ -1,0 +1,16 @@
+{
+  "name": "boardroom",
+  "owner": {
+    "name": "Aaron Perkins",
+    "url": "https://github.com/aidoggo"
+  },
+  "description": "The Boardroom plugin for Claude Code: a meeting room for your agents.",
+  "plugins": [
+    {
+      "name": "boardroom",
+      "source": "./",
+      "description": "Convene two or more of your Claude agents in one meeting with you, with a neutral chair and one decision at a time.",
+      "category": "productivity"
+    }
+  ]
+}
