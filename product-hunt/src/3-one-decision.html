@@ -1,0 +1,39 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><style>
+.l{position:absolute;top:186px;left:64px;width:470px}
+.l .eyebrow{margin-bottom:16px}.l h1{margin-bottom:22px}.l .lede{font-size:21px;margin-bottom:30px}
+ul{list-style:none}li{font-size:18px;color:var(--ink);padding:9px 0 9px 30px;position:relative}
+li:before{content:"";position:absolute;left:4px;top:16px;width:11px;height:11px;border-radius:50%;background:var(--amber)}
+.card{position:absolute;top:150px;right:64px;width:600px;background:#f8fafc;color:#1e293b;border-radius:20px;padding:30px 34px;box-shadow:0 40px 90px rgba(0,0,0,.45)}
+.top{display:flex;justify-content:space-between;align-items:center;font-size:14px;font-weight:700;letter-spacing:.12em;color:#64748b;margin-bottom:10px}
+.q{display:inline-block;font-weight:600;letter-spacing:0;font-size:13px;background:#e2e8f0;color:#475569;border-radius:999px;padding:5px 12px}
+.qq{font-size:25px;font-weight:700;line-height:1.25;letter-spacing:-.015em;margin-bottom:20px}
+.m{border-left:4px solid #94a3b8;padding:2px 0 2px 16px;margin-bottom:18px}
+.m h3{font-size:15px;font-weight:700;margin-bottom:6px;font-family:"SF Mono",ui-monospace,Menlo,monospace}
+.m p{font-size:15.5px;line-height:1.4;color:#334155;margin-bottom:3px;padding-left:14px;position:relative}
+.m p:before{content:"–";position:absolute;left:0;color:#94a3b8}
+.m .rec{margin-top:8px;padding:0;color:#1e293b}.m .rec:before{content:none}
+.m .rec b{color:#b45309}
+.choice{background:#fef3c7;border-radius:12px;padding:14px 16px;font-size:15.5px;line-height:1.4;color:#78350f}
+.choice b{color:#92400e}
+</style></head><body>
+<div class="brand"><svg viewBox="0 0 1024 1024"><circle cx="512" cy="512" r="220" fill="#f1f5f9"/><circle cx="512" cy="184" r="58" fill="#f59e0b"/><circle cx="228" cy="348" r="58" fill="#94a3b8"/><circle cx="796" cy="348" r="58" fill="#94a3b8"/><circle cx="228" cy="676" r="58" fill="#94a3b8"/><circle cx="796" cy="676" r="58" fill="#94a3b8"/><circle cx="512" cy="840" r="58" fill="#94a3b8"/></svg> Boardroom <span class="beta">BETA</span></div>
+<div class="l">
+  <div class="eyebrow">You decide</div>
+  <h1>One decision<br>at a time.</h1>
+  <p class="lede">When the room needs you, the chair puts exactly one question to you, with each member's case in its own words.</p>
+  <ul><li>Recommendations attributed, never paraphrased</li><li>Other questions wait as a count</li><li>Missing facts go to a parking lot, not to you</li></ul>
+</div>
+<div class="card">
+  <div class="top"><span>DECISION 1</span><span class="q">2 more after this</span></div>
+  <div class="qq">Accept the reseller's contract terms as written?</div>
+  <div class="m"><h3>contracts-counsel</h3>
+    <p>The indemnity in §9 is uncapped and could exceed the deal's value.</p>
+    <p>Exclusivity in §4 blocks two partners we're already talking to.</p>
+    <p class="rec"><b>Recommends:</b> "Sign only with liability capped at 12 months of fees."</p></div>
+  <div class="m"><h3>finance</h3>
+    <p>The deal adds about $8,400 a month in year one.</p>
+    <p>Net-60 payment terms push cash in three weeks later.</p>
+    <p class="rec"><b>Recommends:</b> "Accept, and ask for net-30."</p></div>
+  <div class="choice"><b>The choice:</b> accept as written, accept with a liability cap, or decline.</div>
+</div>
+</body></html>
