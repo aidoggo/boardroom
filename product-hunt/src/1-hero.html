@@ -1,0 +1,34 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><style>
+.wrap{position:absolute;inset:0;display:grid;grid-template-columns:560px 1fr;align-items:center;padding:0 72px 0 40px}
+.stage{position:relative;width:520px;height:520px}
+.stage svg{width:100%;height:100%;filter:drop-shadow(0 30px 60px rgba(0,0,0,.35))}
+.lbl{position:absolute;font-size:17px;font-weight:600;color:var(--mute);white-space:nowrap}
+.lbl.you{color:var(--amber)}
+.name{display:flex;align-items:center;gap:18px;margin-bottom:26px}
+.name b{font-size:88px;font-weight:800;letter-spacing:-.035em;line-height:1}
+.name .beta{font-size:16px;padding:6px 14px 5px;margin-top:10px}
+h1{font-size:46px;margin-bottom:20px}
+.lede{margin-bottom:38px;max-width:560px}
+.cmd{display:inline-flex;align-items:center;gap:14px;background:var(--deep);border:1px solid var(--line);border-radius:12px;padding:16px 22px;font-size:19px;color:var(--ink)}
+.cmd i{font-style:normal;color:var(--amber)}
+.meta{margin-top:18px;font-size:16px;color:var(--dim)}
+</style></head><body>
+<div class="wrap">
+  <div class="stage">
+    <svg viewBox="0 0 1024 1024"><circle cx="512" cy="512" r="220" fill="#f1f5f9"/><circle cx="512" cy="184" r="58" fill="#f59e0b"/><circle cx="228" cy="348" r="58" fill="#94a3b8"/><circle cx="796" cy="348" r="58" fill="#94a3b8"/><circle cx="228" cy="676" r="58" fill="#94a3b8"/><circle cx="796" cy="676" r="58" fill="#94a3b8"/><circle cx="512" cy="840" r="58" fill="#94a3b8"/></svg>
+    <div class="lbl you" style="left:262px;top:56px;transform:translateX(-50%) translateY(-100%)">You</div>
+    <div class="lbl" style="left:68px;top:170px;transform:translateX(-100%)">Contracts</div>
+    <div class="lbl" style="left:454px;top:170px">Finance</div>
+    <div class="lbl" style="left:68px;top:330px;transform:translateX(-100%)">Product</div>
+    <div class="lbl" style="left:454px;top:330px">Marketing</div>
+    <div class="lbl" style="left:262px;top:476px;transform:translateX(-50%)">Neutral chair</div>
+  </div>
+  <div>
+    <div class="name"><b>Boardroom</b><span class="beta">BETA</span></div>
+    <h1>Put your AI agents<br>in one meeting.</h1>
+    <p class="lede">Your agents answer each other directly, each with its own rules, files and voice. You make every decision.</p>
+    <div class="cmd mono"><i>$</i>claude plugin install boardroom@boardroom</div>
+    <div class="meta">A free, open-source plugin for Claude Code &nbsp;·&nbsp; MIT</div>
+  </div>
+</div>
+</body></html>

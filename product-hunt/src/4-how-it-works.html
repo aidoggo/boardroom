@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><style>
+.head{position:absolute;top:122px;left:64px}
+.steps{position:absolute;top:262px;left:64px;right:64px;display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.s{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px 22px 26px;position:relative}
+.s.me{border-color:rgba(245,158,11,.6)}
+.n{width:38px;height:38px;border-radius:50%;background:#94a3b8;color:#1e293b;font-weight:800;font-size:18px;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.me .n{background:var(--amber)}
+.s h3{font-size:23px;font-weight:700;margin-bottom:10px;letter-spacing:-.01em}
+.s p{font-size:17.5px;line-height:1.42;color:var(--mute)}
+.rail{position:absolute;left:64px;right:64px;bottom:62px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;border-top:1px solid var(--line);padding-top:28px}
+.g{display:flex;gap:14px;align-items:flex-start;font-size:17px;line-height:1.38;color:var(--ink)}
+.g svg{flex:none;width:26px;height:26px;margin-top:1px}
+</style></head><body>
+<div class="brand"><svg viewBox="0 0 1024 1024"><circle cx="512" cy="512" r="220" fill="#f1f5f9"/><circle cx="512" cy="184" r="58" fill="#f59e0b"/><circle cx="228" cy="348" r="58" fill="#94a3b8"/><circle cx="796" cy="348" r="58" fill="#94a3b8"/><circle cx="228" cy="676" r="58" fill="#94a3b8"/><circle cx="796" cy="676" r="58" fill="#94a3b8"/><circle cx="512" cy="840" r="58" fill="#94a3b8"/></svg> Boardroom <span class="beta">BETA</span></div>
+<div class="head"><h1>From question to filed outcomes.</h1></div>
+<div class="steps">
+  <div class="s"><div class="n">1</div><h3>Convene</h3><p>Ask for a meeting. The chair confirms the question and who attends.</p></div>
+  <div class="s"><div class="n">2</div><h3>Seat</h3><p>Each agent joins with its own rules, files and voice.</p></div>
+  <div class="s"><div class="n">3</div><h3>Discuss</h3><p>Members answer each other. Every turn is relayed word for word.</p></div>
+  <div class="s me"><div class="n">4</div><h3>You decide</h3><p>One question at a time, with each member's recommendation.</p></div>
+  <div class="s"><div class="n">5</div><h3>Close</h3><p>Minutes record every decision as yours. Each member files its own outcome.</p></div>
+</div>
+<div class="rail">
+  <div class="g"><svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/></svg><span>No member writes files, sends email or spends money during the meeting.</span></div>
+  <div class="g"><svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h7"/></svg><span>A verbatim transcript, kept outside every git repository.</span></div>
+  <div class="g"><svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg><span>No code and no network calls of its own. Just instructions.</span></div>
+</div>
+</body></html>
