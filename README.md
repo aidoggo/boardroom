@@ -32,7 +32,7 @@ Boardroom reads your members from a roster file. The plugin itself installs into
 
 The first time you start a meeting without a roster, Boardroom runs a short setup. It asks one question at a time: where to save the roster, and then, for each member, its name, its home folder, the files it loads, and what it speaks on. It checks that the folders and files exist and writes the roster for you. Claude Code treats files under `.claude/` as protected, so it asks you to approve that write.
 
-You can also write the roster by hand. The plugin ships a template, `skills/boardroom/members-template.md`, with three fictional members (a contracts lawyer agent, a finance agent and a product agent) that show you how each is structured. Each member section looks like this:
+You can also write the roster by hand. The plugin ships a template, `plugins/boardroom/skills/boardroom/members-template.md`, with three fictional members (a contracts lawyer agent, a finance agent and a product agent) that show you how each is structured. Each member section looks like this:
 
 ```markdown
 ## finance
