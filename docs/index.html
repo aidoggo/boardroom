@@ -242,6 +242,18 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 
 footer nav{display:flex;flex-wrap:wrap;gap:8px 20px}
 footer a{text-decoration:none}
 footer a:hover{color:var(--ink)}
+/* phone: wrap long lines inside their boxes instead of running past the edge */
+.gh{white-space:nowrap}
+.install pre .ln{display:block}
+@media (max-width:600px){
+  .gh-long{display:none}
+  .launch{border-radius:18px}
+  .install pre{white-space:pre-wrap;overflow-wrap:anywhere;overflow-x:visible;font-size:13px}
+  .install pre .ln{padding-left:2ch;text-indent:-2ch}
+  .file pre{white-space:pre-wrap;overflow-wrap:anywhere;overflow-x:visible;font-size:13px}
+  .transcript-top span:first-child{overflow-wrap:anywhere;min-width:0}
+}
+@media (max-width:360px){.brand .beta{display:none}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -259,7 +271,7 @@ footer a:hover{color:var(--ink)}
       <a class="hide-sm" href="#open">Open source</a>
       <a class="gh" href="https://github.com/aidoggo/boardroom">
         <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-        Star on GitHub
+        Star<span class="gh-long">&nbsp;on GitHub</span>
       </a>
     </nav>
   </div>
@@ -276,8 +288,7 @@ footer a:hover{color:var(--ink)}
       <p class="lede">Boardroom seats your Claude agents at one table, each with its own rules, files and voice. <strong>They answer each other directly.</strong> You stop carrying messages between them, and <strong>you make every decision.</strong></p>
       <div class="install">
         <div class="install-top"><span>Install in Claude Code</span><button class="copy" type="button" id="copy-hero" data-copy="claude plugin marketplace add aidoggo/boardroom&#10;claude plugin install boardroom@boardroom">Copy</button></div>
-        <pre><i>$ </i>claude plugin marketplace add aidoggo/boardroom
-<i>$ </i>claude plugin install boardroom@boardroom</pre>
+        <pre><span class="ln"><i>$ </i>claude plugin marketplace add aidoggo/boardroom</span><span class="ln"><i>$ </i>claude plugin install boardroom@boardroom</span></pre>
       </div>
       <div class="hero-meta"><span>A Claude Code plugin</span><span>No code, no servers</span><span>Runs on your machine</span></div>
     </div>
@@ -529,8 +540,7 @@ footer a:hover{color:var(--ink)}
     <div>
       <div class="install">
         <div class="install-top"><span>Two commands, then ask Claude to convene</span><button class="copy" type="button" id="copy-final" data-copy="claude plugin marketplace add aidoggo/boardroom&#10;claude plugin install boardroom@boardroom">Copy</button></div>
-        <pre><i>$ </i>claude plugin marketplace add aidoggo/boardroom
-<i>$ </i>claude plugin install boardroom@boardroom</pre>
+        <pre><span class="ln"><i>$ </i>claude plugin marketplace add aidoggo/boardroom</span><span class="ln"><i>$ </i>claude plugin install boardroom@boardroom</span></pre>
       </div>
       <div class="btns">
         <a class="btn primary" href="https://github.com/aidoggo/boardroom">Star on GitHub</a>
