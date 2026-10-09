@@ -90,4 +90,6 @@ Background agents ask for permission in your main session whenever a tool call n
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE). The Boardroom name and logo are covered separately by the [trademark policy](TRADEMARKS.md), which explains how to name a fork.
+
+Landing page: [`docs/index.html`](docs/index.html), ready for GitHub Pages.
