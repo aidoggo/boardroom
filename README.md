@@ -92,4 +92,4 @@ Background agents ask for permission in your main session whenever a tool call n
 
 MIT. See [LICENSE](LICENSE). The Boardroom name and logo are covered separately by the [trademark policy](TRADEMARKS.md), which explains how to name a fork.
 
-Landing page: [`docs/index.html`](docs/index.html), ready for GitHub Pages.
+Landing page: [aidoggo.github.io/boardroom](https://aidoggo.github.io/boardroom/), built from [`index.html`](index.html).
