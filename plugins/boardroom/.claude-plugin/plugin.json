@@ -1,16 +1,23 @@
 {
   "name": "boardroom",
   "displayName": "Boardroom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convene two or more of your Claude agents in one meeting with you. A neutral chair seats each agent with its own rules and files, relays every turn word for word, puts decisions to you one question at a time, and keeps the transcript outside every repository.",
   "author": {
     "name": "Aaron Perkins",
     "url": "https://github.com/aidoggo"
   },
-  "homepage": "https://github.com/aidoggo/boardroom",
+  "homepage": "https://aidoggo.github.io/boardroom/",
   "repository": "https://github.com/aidoggo/boardroom",
   "license": "MIT",
-  "keywords": ["agents", "meeting", "multi-agent", "decisions", "subagents"],
+  "icon": "./icon.png",
+  "keywords": [
+    "agents",
+    "meeting",
+    "multi-agent",
+    "decisions",
+    "subagents"
+  ],
   "documentationUrl": "https://github.com/aidoggo/boardroom#readme",
   "supportUrl": "https://github.com/aidoggo/boardroom/issues",
   "privacyPolicyUrl": "https://github.com/aidoggo/boardroom/blob/main/PRIVACY.md",

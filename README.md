@@ -23,6 +23,13 @@ claude plugin install boardroom@boardroom
 
 Start a new Claude Code session, or run `/reload-plugins` in an open one. The skill is available as `/boardroom:boardroom`, and Claude also starts it when you ask to convene your agents or hold a boardroom meeting.
 
+### Updating
+
+Claude Code doesn't auto-update plugins from this marketplace unless you turn that on. To get a new version, either:
+
+- run `claude plugin update boardroom@boardroom`, then restart Claude Code or run `/reload-plugins`; or
+- turn on auto-update once: run `/plugin`, open **Marketplaces**, select **boardroom**, and choose **Enable auto-update**.
+
 ## Set up your members
 
 Boardroom reads your members from a roster file. The plugin itself installs into a read-only cache, so the roster lives in one of two places that you own:
@@ -32,7 +39,7 @@ Boardroom reads your members from a roster file. The plugin itself installs into
 
 The first time you start a meeting without a roster, Boardroom runs a short setup. It asks one question at a time: where to save the roster, and then, for each member, its name, its home folder, the files it loads, and what it speaks on. It checks that the folders and files exist and writes the roster for you. Claude Code treats files under `.claude/` as protected, so it asks you to approve that write.
 
-You can also write the roster by hand. The plugin ships a template, `skills/boardroom/members-template.md`, with three fictional members (a contracts lawyer agent, a finance agent and a product agent) that show you how each is structured. Each member section looks like this:
+You can also write the roster by hand. The plugin ships a template, `plugins/boardroom/skills/boardroom/members-template.md`, with three fictional members (a contracts lawyer agent, a finance agent and a product agent) that show you how each is structured. Each member section looks like this:
 
 ```markdown
 ## finance
