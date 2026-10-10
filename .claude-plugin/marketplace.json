@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "boardroom",
-      "source": "./plugins/boardroom",
+      "source": "./",
       "description": "Convene two or more of your Claude agents in one meeting with you, with a neutral chair and one decision at a time.",
       "category": "productivity"
     }
