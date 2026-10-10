@@ -1,0 +1,22 @@
+name: Point GitHub Pages at gh-pages
+on:
+  push:
+    branches: [pages-config]
+permissions:
+  pages: write
+  contents: read
+jobs:
+  configure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show current Pages config
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api repos/${{ github.repository }}/pages || true
+      - name: Set source to gh-pages root
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api -X PUT repos/${{ github.repository }}/pages \
+            -f "source[branch]=gh-pages" -f "source[path]=/"
+          gh api repos/${{ github.repository }}/pages
